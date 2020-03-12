@@ -1,0 +1,29 @@
+<%- include('header'); -%>
+<table class="table linklist">
+	<thead>
+	    <tr>
+	      <th scope="col">Link</th>
+	      <th scope="col">Name</th>
+	      <th scope="col">Description</th>
+	      <th scope="col">Price</th>
+	      <th scope="col">Latest Price</th>
+	      <th scope="col">Delete</th>
+	    </tr>
+	</thead>
+	<tbody>
+	<% contents.forEach(function(content){%>
+		<tr data-href="/linkdetails/<%- content.uuid %>">
+			<td><%= content.link %></a></td>
+			<td><%= content.name %></td>
+			<td><%- content.description %></td>
+			<td><%= content.current_price %></td>
+			<td><%= content.updated_price %></td>
+			<td><form action="/linklist/deletelink/<%- content.uuid %>" method="POST"><button class="btn btn-danger" type="submit">X</button></form></td>
+		</tr>
+		
+	<%});%>
+	</tbody>
+</table>
+
+
+<%- include('footer'); -%>

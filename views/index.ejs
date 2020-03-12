@@ -1,0 +1,8 @@
+<%- include('header'); -%>
+<h5>Input your product links here</h5>
+<form id="linkform" action="/input" method="POST">
+	<input type="text" name="link">
+	<input type="submit" values="submit" onClick="linkClick()">	
+</form>
+<div id="messages"><%= typeof ermes != 'undefined' ? ermes : '' %></div>
+<%- include('footer'); -%>

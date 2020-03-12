@@ -1,0 +1,16 @@
+.carousel-item img {
+	max-height:300px;
+	margin:auto;
+}
+
+.carousel-inner {
+	height:300px;
+}
+
+div#imagesCarousel{
+	background-color:#333;
+}
+
+.linklist tbody tr{
+	cursor: pointer;
+}
