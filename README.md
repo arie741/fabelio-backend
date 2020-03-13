@@ -13,4 +13,5 @@ npm start
 ```
 
 The app will run in localhost:3000.
-Open localhost:3000 in your browser.
+
+Open [localhost:3000](http://localhost:3000) in your browser.
